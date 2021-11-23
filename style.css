@@ -157,3 +157,9 @@ button .title-alimentacion  {
     position: absolute;
     background: #333333;
   } 
+
+.card-header{
+    
+    background-color: var(--color-ScienceBlue);
+    color: var(--color-Blanco-BlackHaze);
+}

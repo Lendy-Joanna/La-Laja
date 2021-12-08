@@ -11,10 +11,14 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <!--JS-->
+    <script src="./assets/js/jquery.js"></script>
+	<script src="./assets/js/jquery.dataTables.min.js"></script>
     <title>LaLaja</title>
 </head>
 
 <body>
+    <header>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <img src="assets/img/logolalaja.png" alt="" class=" navbar-brandrounded float-left img-fluid" width="70" />
@@ -41,13 +45,40 @@
                     </li>
                     <li>
                         <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                            <input class="form-control me-2" type="search"  id="inputBusqueda" placeholder="Buscar" aria-label="Buscar">
                         </form>
+                        <div class="search" id="search">
+                            <table class="search-table" id="searchTable">
+                                <thead>
+                                    <tr>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">Inicio</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="./assets/pages/nosotros.html">Nosotros</a></td></a>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="./assets/pages/verProductos.html">Productos</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="/assets/pages/contacto.html">Contacto</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Recetas</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+</header>
     <!--
     <div class="container-fluid content-box">
         <div class="row">
@@ -191,36 +222,7 @@
             </div>
         </div>
     </div> -->
-    <br>
-    <div class="container-fluid content-box">
-        <div class="row">
-          <div class="col col-home-introduction">
-            <h2 class="title">Nuestra Comunidad</h2>
-          </div>
-          
-        </div>
-    </div>
-    <div class="container">
-        <br>
-        <div class="row">
-
-          <div class="col">
-            <img src="./assets/img/fabrica.png" alt="">
-          </div>
-          <div class="col">
-              <h3> PRODUCTOS LACTEOS LA LAJA</h3>
-            <p style="text-align: justify;font-size: 18px ; margin-top: 25px;"> 
-            Somos una empresa dedicada a Elaboración de derivados y fermentos lácteos. 
-            Ubicada en COLONIA INDEPENDENCIA de Celaya, GUANAJUATO. Somos empleadores de alrededor de 100 personas.
-            <br>   
-          </p>
-            <button  class="btn btn-success"><a href="./assets/pages/nosotros.html" style="color:#FFFF;">Conoce Más!</a></button>
-          </div>
-         
-        </div>
-    </div>
-    
-    
+        
     <br>
     <div class="container-fluid content-box">
         <div class="row">
@@ -231,6 +233,25 @@
         </div>
     </div>
     <div class="container acciones-container">
+        <div class="container">
+            <br>
+            <div class="row">
+    
+              <div class="col">
+                <img src="./assets/img/fabrica.png" alt="">
+              </div>
+              <div class="col">
+                  <h3> PRODUCTOS LACTEOS LA LAJA</h3>
+                <p style="text-align: justify;font-size: 18px ; margin-top: 25px;"> 
+                Somos una empresa dedicada a Elaboración de derivados y fermentos lácteos. 
+                Ubicada en COLONIA INDEPENDENCIA de Celaya, GUANAJUATO. Somos empleadores de alrededor de 100 personas.
+                <br>   
+              </p>
+                <button  class="btn btn-success"><a href="./assets/pages/nosotros.html" style="color:#FFFF;">Conoce Más!</a></button>
+              </div>
+             
+            </div>
+        </div>
         <div class="accordion" id="accordionExample">
             <div class="accordion-item" style="margin-top: 30px;">
                 <h2 class="accordion-header" id="headingOne">
@@ -394,7 +415,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
-
+    <script src="./assets/js/buscador.js"></script>
 </body>
 
 </html>
